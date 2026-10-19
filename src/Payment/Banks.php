@@ -18,7 +18,7 @@ final class Banks {
 	/**
 	 * BIN => display name.
 	 *
-	 * @return array<string, string>
+	 * @return array<int|string, string> BIN => name. PHP turns numeric string keys into ints.
 	 */
 	public static function all() {
 		$banks = array(
@@ -49,7 +49,7 @@ final class Banks {
 			/**
 			 * Filter the bank list shown in the settings.
 			 *
-			 * @param array<string, string> $banks BIN => bank name.
+			 * @param array<int|string, string> $banks BIN => bank name.
 			 */
 			$banks = (array) apply_filters( 'vqrc_banks', $banks );
 		}
