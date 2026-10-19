@@ -135,3 +135,5 @@ bin/demo-setup.php         Demo data for Playground and wp-env (not shipped)
 ## License
 
 GPL-2.0-or-later. Not affiliated with NAPAS, VietQR or SePay.
+
+
