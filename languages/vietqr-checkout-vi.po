@@ -1,0 +1,271 @@
+# Copyright (C) 2026 Bui Hoang Phi
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: VietQR Checkout for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/vietqr-checkout\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-19T13:32:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: vietqr-checkout\n"
+
+#. Plugin Name of the plugin
+#: vietqr-checkout.php
+msgid "VietQR Checkout for WooCommerce"
+msgstr "VietQR Checkout cho WooCommerce"
+
+#. Plugin URI of the plugin
+#: vietqr-checkout.php
+msgid "https://github.com/PhjnX/vietqr-checkout"
+msgstr ""
+
+#. Description of the plugin
+#: vietqr-checkout.php
+msgid "Accept Vietnamese bank transfers via VietQR. Orders are confirmed automatically when the money arrives (SePay webhook)."
+msgstr "Nhận chuyển khoản ngân hàng qua VietQR. Đơn hàng được xác nhận tự động khi tiền về (webhook SePay)."
+
+#. Author of the plugin
+#: vietqr-checkout.php
+msgid "Bui Hoang Phi"
+msgstr ""
+
+#. Author URI of the plugin
+#: vietqr-checkout.php
+msgid "https://github.com/PhjnX"
+msgstr ""
+
+#: src/Admin.php:35
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: src/Admin.php:53
+msgid "VietQR"
+msgstr "VietQR"
+
+#: src/Admin.php:54
+msgid "Payment code"
+msgstr "Mã thanh toán"
+
+#: src/Admin.php:55
+msgid "Received"
+msgstr "Đã nhận"
+
+#: src/Admin.php:59
+msgid "Time (UTC)"
+msgstr "Thời gian (UTC)"
+
+#: src/Admin.php:60
+#: src/Frontend.php:151
+#: templates/payment-box.php:19
+msgid "Amount"
+msgstr "Số tiền"
+
+#: src/Admin.php:61
+msgid "Result"
+msgstr "Kết quả"
+
+#: src/Expiry.php:78
+msgid "VietQR: payment window ended with a partial payment. Please contact the customer."
+msgstr "VietQR: hết thời gian thanh toán, khách mới chuyển một phần. Vui lòng liên hệ khách hàng."
+
+#: src/Expiry.php:83
+msgid "VietQR: no transfer received before the payment window ended."
+msgstr "VietQR: không nhận được chuyển khoản trước khi hết thời gian thanh toán."
+
+#: src/Frontend.php:104
+msgid "Copied"
+msgstr "Đã chép"
+
+#: src/Frontend.php:105
+msgid "Payment received. Thank you!"
+msgstr "Đã nhận thanh toán. Cảm ơn bạn!"
+
+#: src/Frontend.php:106
+msgid "The payment window has ended. Please contact us if you already transferred."
+msgstr "Đã hết thời gian thanh toán. Nếu bạn đã chuyển khoản, vui lòng liên hệ với chúng tôi."
+
+#: src/Frontend.php:107
+msgid "Part of the payment arrived. Please transfer the remaining amount."
+msgstr "Đã nhận một phần. Vui lòng chuyển số tiền còn lại."
+
+#: src/Frontend.php:108
+msgid "Simulation failed."
+msgstr "Giả lập thất bại."
+
+#: src/Frontend.php:148
+#: src/Gateway.php:97
+#: templates/payment-box.php:16
+msgid "Bank"
+msgstr "Ngân hàng"
+
+#: src/Frontend.php:149
+#: src/Gateway.php:104
+#: templates/payment-box.php:17
+msgid "Account number"
+msgstr "Số tài khoản"
+
+#: src/Frontend.php:150
+#: src/Gateway.php:108
+#: templates/payment-box.php:18
+msgid "Account holder"
+msgstr "Chủ tài khoản"
+
+#: src/Frontend.php:152
+#: templates/payment-box.php:20
+msgid "Transfer note"
+msgstr "Nội dung chuyển khoản"
+
+#: src/Frontend.php:156
+msgid "Please transfer with these details:"
+msgstr "Vui lòng chuyển khoản theo thông tin sau:"
+
+#: src/Frontend.php:164
+msgid "Bank transfer details"
+msgstr "Thông tin chuyển khoản"
+
+#: src/Gateway.php:53
+msgid "VietQR bank transfer"
+msgstr "Chuyển khoản VietQR"
+
+#: src/Gateway.php:54
+msgid "Customers scan a VietQR code with any Vietnamese banking app. Orders are confirmed automatically through a SePay webhook."
+msgstr "Khách quét mã VietQR bằng app ngân hàng bất kỳ. Đơn hàng được xác nhận tự động qua webhook SePay."
+
+#: src/Gateway.php:77
+msgid "Enable"
+msgstr "Bật"
+
+#: src/Gateway.php:79
+msgid "Enable VietQR bank transfer"
+msgstr "Bật chuyển khoản VietQR"
+
+#: src/Gateway.php:83
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: src/Gateway.php:85
+msgid "Bank transfer (VietQR)"
+msgstr "Chuyển khoản ngân hàng (VietQR)"
+
+#: src/Gateway.php:88
+msgid "Description"
+msgstr "Mô tả"
+
+#: src/Gateway.php:90
+msgid "Scan the QR code with your banking app after placing the order. The order is confirmed automatically."
+msgstr "Quét mã QR bằng app ngân hàng sau khi đặt hàng. Đơn hàng được xác nhận tự động."
+
+#: src/Gateway.php:93
+msgid "Receiving account"
+msgstr "Tài khoản nhận tiền"
+
+#: src/Gateway.php:110
+msgid "Exactly as registered at the bank, e.g. NGUYEN VAN A."
+msgstr "Đúng như đăng ký tại ngân hàng, ví dụ NGUYEN VAN A."
+
+#: src/Gateway.php:113
+msgid "Payment code prefix"
+msgstr "Tiền tố mã thanh toán"
+
+#: src/Gateway.php:116
+msgid "2-5 letters. The transfer note becomes prefix + order number, e.g. DH1234. Must match the payment code structure configured in SePay."
+msgstr "2-5 chữ cái. Nội dung chuyển khoản là tiền tố + mã đơn, ví dụ DH1234. Phải khớp với cấu trúc mã thanh toán đã cấu hình trên SePay."
+
+#: src/Gateway.php:119
+msgid "Cancel unpaid orders after (minutes)"
+msgstr "Hủy đơn chưa thanh toán sau (phút)"
+
+#: src/Gateway.php:123
+msgid "0 keeps unpaid orders on hold forever. Cancelled orders return their stock."
+msgstr "0 = không tự hủy. Đơn bị hủy sẽ được hoàn lại tồn kho."
+
+#: src/Gateway.php:126
+msgid "SePay webhook"
+msgstr "Webhook SePay"
+
+#. translators: %s: webhook URL.
+#: src/Gateway.php:129
+msgid "In my.sepay.vn > WebHooks, send transactions to %s with \"API Key\" authentication and JSON content type."
+msgstr "Trong my.sepay.vn > WebHooks, gửi giao dịch tới %s, chứng thực \"API Key\", kiểu nội dung JSON."
+
+#: src/Gateway.php:132
+msgid "API key"
+msgstr "API key"
+
+#: src/Gateway.php:134
+msgid "The same key you enter in SePay. Webhooks without this key are rejected."
+msgstr "Key giống với key nhập trên SePay. Webhook không có key này sẽ bị từ chối."
+
+#: src/Gateway.php:137
+#: templates/payment-box.php:70
+msgid "Test mode"
+msgstr "Chế độ thử nghiệm"
+
+#: src/Gateway.php:139
+msgid "Show a \"Simulate payment\" button on the order page to shop managers"
+msgstr "Hiện nút \"Giả lập thanh toán\" trên trang đơn hàng cho quản lý cửa hàng"
+
+#: src/Gateway.php:141
+msgid "For demos and local development. The simulated payment goes through the same code path as a real webhook."
+msgstr "Dùng để demo và phát triển ở máy local. Thanh toán giả lập đi qua đúng luồng xử lý của webhook thật."
+
+#. translators: %s: payment code.
+#: src/Gateway.php:188
+msgid "Awaiting VietQR transfer with note %s."
+msgstr "Đang chờ chuyển khoản VietQR với nội dung %s."
+
+#. translators: 1: amount, 2: order status, 3: bank reference.
+#: src/PaymentProcessor.php:105
+msgid "VietQR: received %1$s while the order was \"%2$s\". Please check manually. Bank ref: %3$s"
+msgstr "VietQR: nhận %1$s khi đơn đang ở trạng thái \"%2$s\". Vui lòng kiểm tra thủ công. Mã GD ngân hàng: %3$s"
+
+#. translators: 1: amount of this transfer, 2: total received, 3: order total.
+#: src/PaymentProcessor.php:127
+msgid "VietQR: received %1$s (total %2$s of %3$s). Waiting for the rest."
+msgstr "VietQR: nhận %1$s (tổng %2$s / %3$s). Đang chờ phần còn lại."
+
+#. translators: 1: amount, 2: bank name, 3: bank reference.
+#: src/PaymentProcessor.php:142
+msgid "VietQR: payment of %1$s confirmed via %2$s. Bank ref: %3$s"
+msgstr "VietQR: đã xác nhận thanh toán %1$s qua %2$s. Mã GD ngân hàng: %3$s"
+
+#. translators: %s: overpaid amount.
+#: src/PaymentProcessor.php:153
+msgid "VietQR: customer overpaid by %s. Consider refunding the difference."
+msgstr "VietQR: khách chuyển dư %s. Cân nhắc hoàn lại phần chênh lệch."
+
+#: templates/payment-box.php:25
+msgid "Scan to pay"
+msgstr "Quét mã để thanh toán"
+
+#: templates/payment-box.php:28
+msgid "Waiting for your transfer…"
+msgstr "Đang chờ bạn chuyển khoản…"
+
+#: templates/payment-box.php:37
+msgid "VietQR payment code"
+msgstr "Mã thanh toán VietQR"
+
+#: templates/payment-box.php:38
+msgid "Open your banking app and scan. Amount and note are filled in for you."
+msgstr "Mở app ngân hàng và quét mã. Số tiền và nội dung được điền sẵn."
+
+#: templates/payment-box.php:49
+msgid "Copy"
+msgstr "Chép"
+
+#. translators: %s: payment code.
+#: templates/payment-box.php:62
+msgid "Keep the note %s exactly, otherwise the order cannot be matched automatically."
+msgstr "Giữ nguyên nội dung %s, nếu không đơn hàng sẽ không được xác nhận tự động."
+
+#: templates/payment-box.php:71
+msgid "Simulate payment"
+msgstr "Giả lập thanh toán"
