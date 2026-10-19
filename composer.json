@@ -1,0 +1,50 @@
+{
+	"name": "phjnx/vietqr-checkout",
+	"description": "VietQR bank transfer gateway for WooCommerce with automatic confirmation via SePay webhooks.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Bui Hoang Phi",
+			"homepage": "https://github.com/PhjnX"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"php-stubs/woocommerce-stubs": "^11.2",
+		"phpstan/phpstan": "^2.1",
+		"phpunit/phpunit": "^9.6",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"wp-coding-standards/wpcs": "^3.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"VietQRCheckout\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"VietQRCheckout\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"lint:fix": "phpcbf",
+		"analyse": "phpstan analyse --memory-limit=1G",
+		"test": "phpunit",
+		"check": [
+			"@lint",
+			"@analyse",
+			"@test"
+		]
+	}
+}

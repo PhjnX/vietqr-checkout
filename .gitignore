@@ -1,0 +1,9 @@
+/vendor/
+/node_modules/
+/dist/
+.phpunit.result.cache
+.phpcs-cache
+.DS_Store
+.env
+*.log
+.wp-env.override.json
