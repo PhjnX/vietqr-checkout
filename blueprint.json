@@ -1,0 +1,52 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "VietQR Checkout demo",
+		"author": "PhjnX",
+		"description": "WooCommerce shop in VND with the VietQR Checkout gateway in test mode."
+	},
+	"landingPage": "/shop/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "woocommerce"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/PhjnX/vietqr-checkout",
+				"ref": "main",
+				"refType": "branch",
+				"path": "/"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "vietqr-checkout"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require WP_PLUGIN_DIR . '/vietqr-checkout/bin/demo-setup.php';"
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "VietQR Checkout demo"
+			}
+		}
+	]
+}
